@@ -1,0 +1,48 @@
+.card {
+  position: relative;
+  background-color: #ff6060;
+  color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: left;
+  padding-left: 1rem;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+
+  &__image {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(10, 10, 10, 0) 42%,
+      rgba(4, 4, 4, 0.205) 99.99%,
+      rgba(0, 0, 0, 0.5) 100%
+    );
+    z-index: 0;
+  }
+
+  &__title {
+    position: relative;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    z-index: 1;
+  }
+}
