@@ -4,16 +4,24 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   background-color: $black-background-color;
 
   &__logo {
-    height: 20px;
-    margin-bottom: 0.5rem;
+    height: 30px;
+    margin-bottom: 0.8rem;
   }
 
   &__text {
     font-size: 0.7rem;
     color: $white-text-color;
+    margin: 0;
+  }
+
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+  @media (max-width: 400px) {
+    padding: 1rem 0.5rem;
   }
 }

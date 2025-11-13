@@ -145,4 +145,7 @@
       margin-top: 0;
     }
   }
+  @media (max-width: 400px) {
+    padding: 1rem 0.5rem;
+  }
 }
