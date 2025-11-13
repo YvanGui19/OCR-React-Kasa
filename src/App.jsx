@@ -4,6 +4,7 @@ import Layout from './components/Layout'
 import Error from './components/Error'
 import Accueil from './pages/Accueil'
 import APropos from './pages/APropos'
+import Logement from './pages/Logement'
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -28,10 +29,18 @@ export default function App() {
           }
         />
         <Route
-          path="/APropos"
+          path="/a-propos"
           element={
             <Layout>
               <APropos />
+            </Layout>
+          }
+        />
+        <Route
+          path="/logement/:id"
+          element={
+            <Layout>
+              <Logement />
             </Layout>
           }
         />

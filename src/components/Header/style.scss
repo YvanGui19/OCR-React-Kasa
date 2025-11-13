@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #fff;
+  background-color: $white-background-color;
 
   &__logo {
     height: 50px;
@@ -14,18 +14,22 @@
     gap: 1.5rem;
     font-size: 0.9rem;
     text-decoration: none;
-    color: #000;
+    color: $black-text-color;
   }
   &__link {
     text-decoration: none;
-    color: #000;
+    color: $black-text-color;
     font-weight: 500;
 
     &.active {
       text-decoration: underline;
     }
     &:hover {
-      color: #ff6060;
+      color: $primary-color;
+    }
+
+    @media (max-width: 600px) {
+      text-transform: uppercase;
     }
   }
 }

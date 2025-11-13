@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0;
+  margin-bottom: 3.5rem;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 
   &::after {
@@ -20,10 +20,21 @@
 
   &__text {
     position: relative;
-    color: #fff;
+    color: $white-text-color;
     font-size: 2rem;
     font-weight: 700;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.5);
     z-index: 1;
+
+    @media (max-width: 600px) {
+      font-size: 1.5rem;
+      max-width: 230px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 40px;
+    justify-content: flex-start;
+    max-height: 111px;
   }
 }

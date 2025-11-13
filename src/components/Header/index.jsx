@@ -5,7 +5,10 @@ import './style.scss'
 export default function Header() {
   return (
     <header className="header">
-      <img src={logo} alt="Logo de l'entreprise" className="header__logo" />
+      <NavLink to="/">
+        <img src={logo} alt="Logo de l'entreprise" className="header__logo" />
+      </NavLink>
+
       <nav className="header__nav">
         <NavLink
           to="/"
@@ -16,7 +19,7 @@ export default function Header() {
           Accueil
         </NavLink>
         <NavLink
-          to="/APropos"
+          to="/a-propos"
           className={({ isActive }) =>
             isActive ? 'header__link active' : 'header__link'
           }

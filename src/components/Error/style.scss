@@ -1,28 +1,35 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 .error {
+  display: flex;
+  flex-direction: column;
   font-family: 'Montserrat', sans-serif;
   text-align: center;
-  padding: 4rem 1rem;
-  gap: 30px;
+  gap: 5rem;
 
-  &__logo {
-    max-width: 400px;
+  &__title {
+    margin: 0;
+    font-size: 13rem;
+    font-weight: 700;
+    color: $primary-color;
   }
 
   &__text {
     font-size: 1.5rem;
-    color: #ff6060;
-    margin: 2rem 0;
+    color: $primary-color;
   }
 
   &__link {
     font-size: 1rem;
-    color: #000;
+    color: $black-text-color;
     text-decoration: underline;
 
     &:hover {
-      color: #ff6060;
+      color: $primary-color;
     }
+  }
+
+  @media (max-width: 600px) {
+    padding: 0 4rem;
   }
 }

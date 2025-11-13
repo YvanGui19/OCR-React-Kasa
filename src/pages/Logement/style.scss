@@ -1,0 +1,148 @@
+.logement {
+  padding: 1.5rem 4rem;
+
+  &__infos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+    gap: 1.6rem;
+  }
+
+  &__details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    flex: 1;
+
+    & .logement__title {
+      font-size: 2rem;
+      font-weight: 500;
+      margin: 0 0 0.5rem 0;
+      color: $primary-color;
+    }
+
+    & .logement__location {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: $black-text-color;
+      margin-top: 0;
+    }
+
+    & .logement__tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 1.5rem;
+
+      & .logement__tag {
+        background-color: $primary-color;
+        color: $white-text-color;
+        padding: 0.3rem 1.5rem;
+        border-radius: 10px;
+        font-size: 0.7rem;
+        font-weight: 700;
+
+        @media (max-width: 600px) {
+          border-radius: 5px;
+        }
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.5rem;
+
+    @media (max-width: 600px) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 2rem;
+      width: 100%;
+    }
+    @media (max-width: 500px) {
+      flex-direction: column;
+    }
+  }
+  &__host {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+    &-info {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &-name {
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin: 0;
+      color: $primary-color;
+    }
+
+    &-lastname {
+      font-weight: 500;
+      font-size: 1.1rem;
+      margin: 0;
+      color: $primary-color;
+    }
+
+    &-picture {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    @media (max-width: 600px) {
+      order: 2;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    margin-top: 10px;
+
+    .filled-star {
+      color: $primary-color;
+    }
+
+    .empty-star {
+      color: $grey-star-color;
+    }
+
+    @media (max-width: 600px) {
+      order: 1;
+    }
+  }
+
+  &__collapses {
+    display: flex;
+    gap: 2rem;
+
+    .collapse {
+      flex: 1;
+    }
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      gap: 0.5rem;
+      margin-top: 0;
+    }
+  }
+}
