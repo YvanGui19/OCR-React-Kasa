@@ -105,6 +105,11 @@
       height: 64px;
       border-radius: 50%;
       object-fit: cover;
+
+      @media (max-width: 600px) {
+        width: 44px;
+        height: 44px;
+      }
     }
 
     @media (max-width: 600px) {
@@ -128,6 +133,8 @@
 
     @media (max-width: 600px) {
       order: 1;
+      gap: 0.5rem;
+      font-size: 0.9rem;
     }
   }
 
