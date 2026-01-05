@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner'
 import Card from '../../components/Card'
-import imageAccueil from '../../assets/falaises_accueil.svg'
+import imageAccueil from '../../assets/falaises_accueil.webp'
 import logementsData from '../../data/logements.json'
 import { Link } from 'react-router-dom'
 import './style.scss'

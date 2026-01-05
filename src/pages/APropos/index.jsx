@@ -1,6 +1,6 @@
 import Banner from '../../components/Banner'
 import Collapse from '../../components/Collapse'
-import imageAPropos from '../../assets/montagnes_aPropos.svg'
+import imageAPropos from '../../assets/montagnes_aPropos.webp'
 import './style.scss'
 
 export default function APropos() {
