@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import path from 'path'
 
 export default defineConfig({
-  base: 'https://github.com/YvanGui19/OCR-React-Kasa',
+  base: '/',
   plugins: [react()],
   resolve: {
     alias: {
